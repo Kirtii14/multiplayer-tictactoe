@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink;
+}
+
+.start-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.game-card {
+  width: 420px;
+  min-height: 300px;
+  padding: 30px 35px;
+  border-radius: 20px;
+}
+
+.player-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  font-size: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0 black;
+}
+
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  margin: 32px 0;
+}
+
+
+.player-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.turn-indicator {
+  font-size: 17px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  transform: rotate(-1deg);
+}
+
+
