@@ -5,11 +5,31 @@ interface Props {
 
 export default function PlayerAvatar({ emoji, label }: Props) {
   return (
-    <div className="flex flex-col items-center gap-1">
-      <div className="w-16 h-16 flex items-center justify-center text-3xl bg-paper border-4 border-ink rounded-full shadow-comic">
-        {emoji}
+    <div className="flex flex-col items-center gap-4">
+      
+      {/* Circle Container */}
+      <div className="
+        w-40 h-40 
+        flex items-center justify-center 
+        border-4 border-ink 
+        rounded-full 
+        bg-paper 
+        shadow-comic 
+        comic-wobble 
+        transition-transform duration-200 
+        hover:-rotate-1
+      ">
+        <span className="text-7xl leading-none">
+          {emoji}
+        </span>
       </div>
-      <span className="font-comic text-sm">{label}</span>
+
+      {/* Label */}
+      <p className="text-lg font-semibold tracking-wide">
+        {label}
+      </p>
+
     </div>
   );
 }
+

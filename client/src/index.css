@@ -4,6 +4,7 @@
 
 body {
   @apply bg-paper text-ink;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .start-btn-wrapper {
@@ -52,6 +53,27 @@ body {
   margin-bottom: 24px;
   font-weight: 500;
   transform: rotate(-1deg);
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-idle {
+  animation: floaty 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 
