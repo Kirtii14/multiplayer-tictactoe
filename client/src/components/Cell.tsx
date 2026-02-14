@@ -7,6 +7,7 @@ export default function Cell({ value, onClick }: CellProps) {
   return (
     <button
       onClick={onClick}
+    
       className="
         w-24 h-24
         border-2 border-gray-300

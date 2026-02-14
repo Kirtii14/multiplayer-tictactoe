@@ -17,6 +17,7 @@ export function createGame(): GameState {
     currentTurn: "X",
     players: [],
     winner: null,
+    status: "waiting",
   };
 }
 
@@ -25,15 +26,21 @@ export function makeMove(
   index: number,
   symbol: PlayerSymbol
 ): boolean {
+  // 🔒 Validation
+  if (game.status !== "playing") return false;
   if (game.winner) return false;
   if (game.currentTurn !== symbol) return false;
+  if (index < 0 || index >= 9) return false;
   if (game.board[index] !== null) return false;
 
   game.board[index] = symbol;
+
   checkWinner(game);
 
   if (!game.winner) {
     game.currentTurn = symbol === "X" ? "O" : "X";
+  } else {
+    game.status = "finished";
   }
 
   return true;
@@ -55,4 +62,5 @@ function checkWinner(game: GameState) {
     game.winner = "DRAW";
   }
 }
+
 

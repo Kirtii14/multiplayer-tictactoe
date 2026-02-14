@@ -9,7 +9,15 @@ export default function Board({ board, onMove }: BoardProps) {
   return (
     <div className="grid grid-cols-3 gap-2">
       {board.map((cell, i) => (
-        <Cell key={i} value={cell} onClick={() => onMove(i)} />
+       <Cell
+  key={i}
+  value={cell}
+  onClick={() => {
+    console.log("Clicked:", i);
+    onMove(i);
+  }}
+/>
+
       ))}
     </div>
   );
