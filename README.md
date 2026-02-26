@@ -14,7 +14,7 @@ A production-ready real-time multiplayer Tic Tac Toe game built with **React, Ty
 
 ##  Live Demo
 
-Frontend (Play here):   
+Frontend **(Play here)**:   
 https://multiplayer-tictactoe-1.onrender.com  
 
 Backend (WebSocket Server):  
