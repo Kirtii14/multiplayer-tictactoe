@@ -7,7 +7,7 @@ A production-ready real-time multiplayer Tic Tac Toe game built with **React, Ty
 >  Fully deployed full-stack application  
 
 <p align="center">
-  <img src="image.png" alt="Multiplayer Tic Tac Toe Preview" width= "500" height="500"/>
+  <img src="image.png" alt="Multiplayer Tic Tac Toe Preview" height="500"/>
 </p>
 
 ---
