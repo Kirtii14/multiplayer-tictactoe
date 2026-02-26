@@ -4,8 +4,8 @@ A production-ready real-time multiplayer Tic Tac Toe game built with **React, Ty
 
 >  Play with a friend in real time  
 >  Or challenge the built-in bot  
->  Fully deployed full-stack application  
-
+>  Fully deployed full-stack application 
+ 
 <p align="center">
   <img src="image.png" alt="Multiplayer Tic Tac Toe Preview" height="500"/>
 </p>
